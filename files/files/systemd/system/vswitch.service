@@ -1,0 +1,14 @@
+[Unit]
+Description = Open vswitch
+Before=network.target network.service
+After=network-pre.target ovsdb-server.service ovs-vswitchd.service
+PartOf=network.target
+
+[Service]
+Type = simple
+ExecStart = /usr/share/openvswitch/scripts/ovs-ctl start
+ExecStop = /usr/share/openvswitch/scripts/ovs-ctl stop
+RemainAfterExit = yes
+
+[Install]
+WantedBy = default.target

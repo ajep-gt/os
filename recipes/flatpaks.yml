@@ -1,0 +1,24 @@
+    modules:
+      - type: default-flatpaks
+        notify: true 
+        system:
+          repo-name: flathub
+          repo-title: "Flathub (system-wide)" 
+          install:
+            - tv.kodi.Kodi
+            - io.freetubeapp.FreeTube
+            - com.rustdesk.RustDesk
+            - com.anydesk.Anydesk
+            - com.vscodium.codium
+            - org.kde.kamoso
+            - org.kde.kolourpaint
+            - org.kde.isoimagewriter
+            - org.kde.kleopatra
+            - org.gtk.Gtk3theme.Breeze
+            - org.gtk.Gtk3theme.Arc-Dark
+            - io.github.martchus.syncthingtray
+            - fr.handbrake.ghb
+            - org.kde.gwenview
+            - org.libreoffice.LibreOffice
+            - com.github.wwmm.easyeffects
+            - org.kde.kcalc

@@ -1,0 +1,16 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - hyprland
+        - hyprcursor
+        - hypridle
+        - hyprlock
+        - hyprutils
+        - hyprpaper
+        - qt5ct
+        - qt6ct
+        - waybar
+        - wofi
+        - dunst
+        - greetd
+        - tuigreet

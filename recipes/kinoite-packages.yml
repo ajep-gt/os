@@ -1,0 +1,12 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - kvantum
+        - krename
+        - kate
+        - texstudio
+        - texlive-babel-spanish
+        - hunspell-es
+        - arc-theme
+        - texmaker
+
