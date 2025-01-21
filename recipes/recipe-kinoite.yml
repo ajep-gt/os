@@ -39,7 +39,7 @@ modules:
         - podman.socket
     user:
       enabled:
-        podman.socket
+        - podman.socket
 
   - type: chezmoi
     all-users: false # make users have to enable chezmoi manually

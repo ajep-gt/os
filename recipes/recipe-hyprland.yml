@@ -20,4 +20,14 @@ modules:
   - from-file: hyprland-packages.yml
   - from-file: fonts.yml
 
+  - type: systemd
+    system:
+      enabled:
+        - sshd.service
+        - cockpit.socket
+        - podman.socket
+    user:
+      enabled:
+        - podman.socket
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
