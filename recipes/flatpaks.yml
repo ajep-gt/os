@@ -1,6 +1,6 @@
     modules:
       - type: default-flatpaks
-        notify: true 
+        notify: false 
         system:
           repo-name: flathub
           repo-title: "Flathub (system-wide)" 
