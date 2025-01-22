@@ -1,4 +1,14 @@
 modules:
+    - type: files
+      files:
+        - source: system
+          destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+    - type: script
+      scripts:
+        - installrpmfusion.sh
+        - rpmostreeoverride.sh
+
     - type: rpm-ostree
       install:
         - neovim
@@ -46,3 +56,28 @@ modules:
         - mkvtoolnix
         - mpv
         - keepassxc
+
+    - type: chezmoi
+      repository: http://localhost/dotfiles.git
+      all-users: false # make users have to enable chezmoi manually
+      file-conflict-policy: replace # override changed files with those from the repo
+
+    - type: copy
+      from: docker.io/rclone/rclone
+      src: /usr/local/bin/rclone
+      dest: /usr/bin
+    
+    - type: script
+      snippets:
+        - ln -s /usr/bin/rclone /usr/sbin/mount.rclone
+        - semanage port -m -t websm_port_t -p tcp 9191
+
+    - type: systemd
+      system:
+        enabled:
+          - sshd.service
+          - cockpit.socket
+          - podman.socket
+      user:
+        enabled:
+          - podman.socket
