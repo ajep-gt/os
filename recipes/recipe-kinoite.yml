@@ -30,6 +30,7 @@ modules:
   - type: script
     snippets:
       - ln -s /usr/bin/rclone /usr/sbin/mount.rclone
+      - semanage port -m -t websm_port_t -p tcp 9191
 
   - type: systemd
     system:
