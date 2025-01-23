@@ -12,6 +12,7 @@ modules:
     - type: rpm-ostree
       install:
         - neovim
+        - nodejs-bash-language-server
         - lm_sensors
         - libheif
         - gsmartcontrol
