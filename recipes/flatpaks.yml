@@ -12,7 +12,6 @@
             - com.vscodium.codium
             - org.kde.kamoso
             - org.kde.kolourpaint
-            - org.kde.isoimagewriter
             - org.kde.kleopatra
             - org.gtk.Gtk3theme.Breeze
             - org.gtk.Gtk3theme.Arc-Dark
@@ -22,3 +21,4 @@
             - org.libreoffice.LibreOffice
             - com.github.wwmm.easyeffects
             - org.kde.kcalc
+            - org.fedoraproject.MediaWriter
