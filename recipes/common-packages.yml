@@ -57,6 +57,7 @@ modules:
         - mkvtoolnix
         - mpv
         - keepassxc
+        - broadcom-wl
 
     - type: chezmoi
       repository: http://localhost/dotfiles.git
