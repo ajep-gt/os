@@ -79,6 +79,7 @@ modules:
           - sshd.service
           - cockpit.socket
           - podman.socket
+          - auto-update-flatpak.timer
       user:
         enabled:
           - podman.socket
