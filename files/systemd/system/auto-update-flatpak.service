@@ -1,0 +1,5 @@
+[Unit]
+Description = Auto update flatpak
+
+[Service]
+ExecStart = /usr/bin/flatpak upgrade -y
