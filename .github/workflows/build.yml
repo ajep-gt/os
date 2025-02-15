@@ -18,6 +18,7 @@ jobs:
   bluebuild:
     name: Build Custom Image
     runs-on: ubuntu-latest
+    rechunk: true
     permissions:
       contents: read
       packages: write
