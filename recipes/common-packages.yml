@@ -8,6 +8,8 @@ modules:
       scripts:
         - installrpmfusion.sh
         - rpmostreeoverride.sh
+      snippets:
+        - "curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo"
 
     - type: rpm-ostree
       install:
@@ -58,6 +60,7 @@ modules:
         - mkvtoolnix
         - mpv
         - keepassxc
+        - brave-browser
 
     - type: chezmoi
       repository: http://localhost/dotfiles.git
