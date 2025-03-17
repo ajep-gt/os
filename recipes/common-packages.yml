@@ -17,6 +17,7 @@ modules:
       optfix:
         - brave.com
       install:
+        - iperf3
         - input-leap
         - neovim
         - nodejs-bash-language-server
